@@ -5,7 +5,7 @@ ID="SD73990"
 DIRECTORY="/home/eminaghayev/Projects/STLA-testing"
 
 chmod 777 "/home/eminaghayev/Projects/STLA-testing/script.sh"
-
+#checks if the folder with specific id exists or not if not creates one"
 if [ -d "$DIRECTORY/$ID" ]; then
   echo "Folder with ID $ID already exists"
 else
