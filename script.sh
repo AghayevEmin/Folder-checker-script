@@ -2,7 +2,7 @@
 
 ID="SD73990"
 
-DIRECTORY="/home/eminaghayev/Projects/STLA-testing"
+DIRECTORY="/home/emin/Projects/folderchecker/Folder-checker-script"
 
 chmod 777 "/home/eminaghayev/Projects/STLA-testing/script.sh"
 #checks if the folder with specific id exists or not if not creates one"
