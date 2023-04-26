@@ -1,10 +1,12 @@
 #!/bin/bash
 
-ID="SD73990"
+#this script if for testing purpases only the variables here are hardcoded :) 
 
-DIRECTORY="/home/emin/Projects/folderchecker/Folder-checker-script"
+ID="1234"
 
-chmod 777 "/home/eminaghayev/Projects/STLA-testing/script.sh"
+DIRECTORY="/path/to/directory/"
+
+chmod 775 "/path/to/directory/for-testing.sh"
 #checks if the folder with specific id exists or not if not creates one"
 #just checking
 if [ -d "$DIRECTORY/$ID" ]; then
