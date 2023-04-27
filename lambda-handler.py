@@ -4,10 +4,10 @@ s3 = boto3.client('s3')
 
 def lambda_handler(event, context):
     # Download the Linux script from S3
-    s3.download_file('my-bucket', 'my-linux-script.sh', '/tmp/my-linux-script.sh')
+    s3.download_file('my-bucket', 'linux-script.sh', '/tmp/linux-script.sh')
     
     # Download the Windows script from S3
-    s3.download_file('my-bucket', 'my-windows-script.ps1', '/tmp/my-windows-script.ps1')
+    s3.download_file('my-bucket', 'windows-script.ps1', '/tmp/windows-script.ps1')
     
     # Execute the appropriate script based on the instance type
     ec2 = boto3.resource('ec2')
