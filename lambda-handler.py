@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     
     if 'windows' in instance_type.lower():
         # Execute the Windows script
-        subprocess.check_output(['powershell.exe', '-File', '/tmp/my-windows-script.ps1', arg1, arg2])
+        subprocess.check_output(['powershell.exe', '-File', '/tmp/windows-script.ps1', arg1, arg2])
     else:
         # Execute the Linux script
-        subprocess.check_output(['bash', '/tmp/my-linux-script.sh', arg1, arg2])
+        subprocess.check_output(['bash', '/tmp/linux-script.sh', arg1, arg2])
